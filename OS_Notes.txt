@@ -1,1 +1,3 @@
 mount attaches to the unix file processing tree
+You need to chmod your main folder you are git cloning into
+If you sudo git anything, you're an idiot
