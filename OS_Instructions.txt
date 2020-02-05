@@ -1,0 +1,7 @@
+
+sudo vboxmanage extpack
+sudo apt install virtualbox
+sudo apt install git
+sudo apt install vim
+sudo usermod -aG sudo robert
+
