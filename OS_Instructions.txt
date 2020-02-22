@@ -4,4 +4,6 @@ sudo apt install virtualbox
 sudo apt install git
 sudo apt install vim
 sudo usermod -aG sudo robert
-
+sudo apt install net-tools
+sudo apt-get install libelf-dev
+sudo apt-get install build-essential linux-headers-$(uname -r)
