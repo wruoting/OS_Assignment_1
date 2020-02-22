@@ -3,3 +3,9 @@ You need to chmod your main folder you are git cloning into
 If you sudo git anything, you're an idiot
 A header file is sort of like an interface, if you wanted to call something like
 int foo(double bar), you would need to specify in a header file all of these things so you know what sort of function foo is.
+make with a Makefile that creates a kernel object file from your c file
+insmod-inserts a module into a linux kernel. sudo insmod hello.ko
+rmmod - removes module from linux kernel. sudo rmmod hello
+dmesg|tail - grabs your module load and unload
+ko file-kernel object file
+

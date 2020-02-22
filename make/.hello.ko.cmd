@@ -1,0 +1,1 @@
+cmd_/Projects/OS_Assignment_1/make/hello.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /Projects/OS_Assignment_1/make/hello.ko /Projects/OS_Assignment_1/make/hello.o /Projects/OS_Assignment_1/make/hello.mod.o ;  true
