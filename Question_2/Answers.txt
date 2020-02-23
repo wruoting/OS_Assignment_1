@@ -1,0 +1,8 @@
+2.1 Did they use different system calls?
+cout used more system calls than printf, but the system call to write from the buffer was the same to write to user mode. The different functionalities of cout and printf results in different sets system calls being made, but the write system call is always made at the end. read, fstat, mmap, arch_prctl, mprotect, brk, were all made between the two, but cout did not use any uniquely different system calls than printf. The first 18 commands until close(3) were also essentially identical as well.
+
+2.2 Was there any difference in the number of times system calls used?
+Cout used more system calls than fprint.
+
+2.3 What can you say about the two programs of the same functionality in terms of their efficiency in using system resources?
+For the sake of printing, the extra system calls required for cout will cost more time than printf due to the fact that there are more of them. Cout would be using more system resources to complete than printf with its additional reads and access calls. Generally, this is probably trivial, but over a large amount of printing (eg. Logging millions of messages), there might be a noticeable difference in performance. Printing the character for new line vs flushing the buffer with endl or fflush() would also result in different performance behavior as well. Since I/O is mostly the bottleneck, so performance should not be significantly different.
