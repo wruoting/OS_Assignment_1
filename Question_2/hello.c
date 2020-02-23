@@ -1,4 +1,4 @@
-/* Simple Linux Kernel display in user mode*/
+/* Simple Linux Kernel display in user mode using C*/
 #include <stdio.h>
 
 int main(void)
