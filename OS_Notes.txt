@@ -9,3 +9,6 @@ rmmod - removes module from linux kernel. sudo rmmod hello
 dmesg|tail - grabs your module load and unload
 ko file-kernel object file
 
+On new character in cpp vs endl:
+endl flushes the buffer,endl doesnt occupy memory whereas "\n" does.
+brk() asks the kernel to write to a contiguous(sharing a common border) chunk of memory call the heap
